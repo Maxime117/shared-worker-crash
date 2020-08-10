@@ -1,6 +1,6 @@
-// const viewerWorker = new SharedWorker("live://editor/viewer-worker.js");
+const viewerWorker = new SharedWorker("live://editor/viewer-worker.js");
 // const viewerWorker = new SharedWorker(`${__dirname}/viewer-worker.js`);
-const viewerWorker = new SharedWorker("viewer-worker.js");
+// const viewerWorker = new SharedWorker("viewer-worker.js");
 
 var workerPeerId = null;
 

@@ -42,9 +42,9 @@ function createMainWindow (caller) {
     }
   }))
 
-  // browserWindows.get("main").loadURL("live://editor/mainwin.html");
+  browserWindows.get("main").loadURL("live://editor/mainwin.html");
   // browserWindows.get("main").loadURL(`${__dirname}/mainwin.html`);
-  browserWindows.get("main").loadFile("mainwin.html");
+  // browserWindows.get("main").loadFile("mainwin.html");
 
   browserWindows.get("main").webContents.openDevTools();
   setTimeout(function() {
@@ -73,9 +73,9 @@ function createViewerWindow () {
 
   browserWindows.get("viewer").setAspectRatio(16/9);
 
-  // browserWindows.get("viewer").loadURL("live://editor/viewer.html");
+  browserWindows.get("viewer").loadURL("live://editor/viewer.html");
   // browserWindows.get("viewer").loadURL(`${__dirname}/viewer.html`);
-  browserWindows.get("viewer").loadFile("viewer.html");
+  // browserWindows.get("viewer").loadFile("viewer.html");
 
   browserWindows.get("viewer").webContents.openDevTools({mode: "detach"});
   setTimeout(function() {

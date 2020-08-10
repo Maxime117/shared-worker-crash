@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "electron": "^10.0.0-beta.19"
+    "electron": "^9.2.0"
   }
 }
